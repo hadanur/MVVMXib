@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B75658782933BDFE00617A27 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75658772933BDFE00617A27 /* ViewModel.swift */; };
+		B756587B2933BE2100617A27 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B756587A2933BE2100617A27 /* WebService.swift */; };
+		B77EA44F2933B9AF0091663E /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77EA44E2933B9AF0091663E /* DetailVC.xib */; };
+		B77EA4512933B9B70091663E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77EA4502933B9B70091663E /* DetailVC.swift */; };
 		B7DA9EF72933B6860091B321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA9EF62933B6860091B321 /* AppDelegate.swift */; };
 		B7DA9EF92933B6860091B321 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA9EF82933B6860091B321 /* SceneDelegate.swift */; };
 		B7DA9F002933B6870091B321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DA9EFF2933B6870091B321 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B75658772933BDFE00617A27 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B756587A2933BE2100617A27 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B77EA44E2933B9AF0091663E /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		B77EA4502933B9B70091663E /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		B7DA9EF32933B6860091B321 /* MVVMXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DA9EF62933B6860091B321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7DA9EF82933B6860091B321 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B75658762933BDF200617A27 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B75658772933BDFE00617A27 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B75658792933BE1000617A27 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B756587A2933BE2100617A27 /* WebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B77EA44D2933B9A00091663E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B75658762933BDF200617A27 /* ViewModel */,
+				B77EA44E2933B9AF0091663E /* DetailVC.xib */,
+				B77EA4502933B9B70091663E /* DetailVC.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		B7DA9EEA2933B6860091B321 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +90,7 @@
 		B7DA9EF52933B6860091B321 /* MVVMXib */ = {
 			isa = PBXGroup;
 			children = (
+				B75658792933BE1000617A27 /* Network */,
 				B7DA9F0A2933B72D0091B321 /* App */,
 				B7DA9F0B2933B7340091B321 /* Asset */,
 				B7DA9F0C2933B73C0091B321 /* UI */,
@@ -85,6 +120,7 @@
 		B7DA9F0C2933B73C0091B321 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B77EA44D2933B9A00091663E /* Detail */,
 				B7DA9F0D2933B74D0091B321 /* Home */,
 			);
 			path = UI;
@@ -158,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DA9F032933B6870091B321 /* LaunchScreen.storyboard in Resources */,
+				B77EA44F2933B9AF0091663E /* DetailVC.xib in Resources */,
 				B7DA9F112933B79F0091B321 /* HomeVC.xib in Resources */,
 				B7DA9F002933B6870091B321 /* Assets.xcassets in Resources */,
 			);
@@ -170,6 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B756587B2933BE2100617A27 /* WebService.swift in Sources */,
+				B75658782933BDFE00617A27 /* ViewModel.swift in Sources */,
+				B77EA4512933B9B70091663E /* DetailVC.swift in Sources */,
 				B7DA9F0F2933B7550091B321 /* HomeVC.swift in Sources */,
 				B7DA9EF72933B6860091B321 /* AppDelegate.swift in Sources */,
 				B7DA9EF92933B6860091B321 /* SceneDelegate.swift in Sources */,
