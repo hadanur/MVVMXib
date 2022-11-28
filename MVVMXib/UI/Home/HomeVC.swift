@@ -15,8 +15,13 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Denmee"
+       
+        let homeCell = UINib(nibName: "HomeCell", bundle: nil)
+        tableView.register(homeCell, forCellReuseIdentifier: "homeCell")
         tableView.delegate = self
         tableView.dataSource = self
+//        tableView.estimatedRowHeight = 100
+//        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -25,9 +30,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         2
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        100
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "Text"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeCell
+        cell.configure(title: "\(indexPath.row)")
         return cell
     }
 
